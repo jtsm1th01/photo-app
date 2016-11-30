@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :images
   #override the default devise registrations controller to add stripe functionality
   devise_for :users, :controllers => { :registrations => 'registrations' } 
   # The priority is based upon order of creation: first created -> highest priority.
